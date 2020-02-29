@@ -35,13 +35,13 @@ public struct Video: Equatable {
 }
 
 public struct VideoSnippet: Equatable {
-   public let title: String
-   public let publishDate: Date
-   public let channelId: String
-   public let channelTitle: String
-   public let defaultImage: Image
-   public let mediumImage: Image
-   public let highImage: Image
+   public let title: String?
+   public let publishDate: Date?
+   public let channelId: String?
+   public let channelTitle: String?
+   public let defaultImage: Image?
+   public let mediumImage: Image?
+   public let highImage: Image?
 
    public static func == (lhs: VideoSnippet, rhs: VideoSnippet) -> Bool {
       return lhs.title == rhs.title &&
